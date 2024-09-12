@@ -1,0 +1,9 @@
+[submodule "express-portal"]
+	path = express-portal
+	url = https://github.com/ColeBlender/express-portal.git
+[submodule "guests-microservice"]
+	path = guests-microservice
+	url = https://github.com/ColeBlender/guests-microservice.git
+[submodule "wifi-microservice"]
+	path = wifi-microservice
+	url = https://github.com/ColeBlender/wifi-microservice.git
