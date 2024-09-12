@@ -4,13 +4,12 @@ This project simulates the WiFi login experience at MGM Grand, Las Vegas. It is 
 
 ## Project Overview
 
-The project is composed of three key microservices:
-
-1. **[Express Portal](https://github.com/ColeBlender/express-portal)**: A full-stack web app that simulates the WiFi login experience for hotel guests, with a responsive frontend and a Node.js/Express backend.
+1. **[Express Portal](https://github.com/ColeBlender/express-portal)**: A full-stack web application that serves as the frontend and API gateway. It simulates the WiFi login experience for hotel guests, routing requests to the microservices.
    - **Frontend**: HTML, CSS, JavaScript, and TypeScript
    - **Backend**: Node.js, Express, Supabase (database), Docker
+   - **Role**: Serves the user interface and handles API routing to microservices.
 
-2. **[Guests Microservice](https://github.com/ColeBlender/guests-microservice)**: Handles guest operations, including check-ins and managing WiFi login counts, via gRPC.
+2. **[Guests Microservice](https://github.com/ColeBlender/guests-microservice)**: Handles guest operations, including check-ins and managing WiFi login counts via gRPC.
    - **Features**: Guest registration, retrieving guest details, and updating WiFi login counts
    - **Database**: Supabase
    - **Deployment**: Docker
@@ -36,7 +35,7 @@ The live version of the main Express Portal can be accessed at:
 
 ## Architecture
 
-- **Express Portal**: User-facing web app
+- **Express Portal**: User-facing web app and API gateway
 - **Guests Microservice**: Manages guest check-ins and details
 - **WiFi Microservice**: Handles WiFi login process
 - **NATS Server**: Facilitates communication between microservices
